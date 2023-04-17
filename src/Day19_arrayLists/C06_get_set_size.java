@@ -1,0 +1,24 @@
+package Day19_arrayLists;
+
+import java.util.ArrayList;
+import java.util.List;
+public class C06_get_set_size {
+    public static void main(String[] args) {
+
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(3);
+        numbers.add(5);
+        numbers.add(2);
+        System.out.println(numbers);  // [3, 5, 2]
+        System.out.println(numbers.get(0));  // 3
+
+        // print the last element
+        System.out.println(numbers.get(numbers.size()-1)); // 2  // size is used instead of length in Array list
+
+        // let's change 5 with 7
+        System.out.println(numbers.set(1, 7)); // 5 // set will replace the new value with the old one
+        System.out.println(numbers); // [3, 7, 2]
+
+
+    }
+}
